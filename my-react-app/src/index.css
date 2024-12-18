@@ -1,0 +1,419 @@
+.Tarjeta {
+  border: 1px solid rgb(156, 156, 156);
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+  padding: 25px;
+  margin: 10px auto;
+  text-align: center;
+  max-width: 300px;
+}
+
+.FotoSaskiaContenedor {
+  border: 1px solid rgb(156, 156, 156);
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+  margin: 10px auto;
+  text-align: center;
+  max-width: fit-content;
+  max-height: fit-content;
+}
+
+.FotoSaskia {
+  margin: 10px auto;
+  width: 500px;
+  height: 500px;
+  border-radius: 10px;
+}
+
+.Tarjeta .FotoSaskia {
+  margin: 10px auto;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+
+.Tarjeta .Titulo {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  color: rgb(41, 41, 41);
+}
+
+.Tarjeta .Descripcion {
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(41, 41, 41);
+}
+
+/* .BotonEstiloso { Este es estilo externo con css
+  background-color: hsl(200, 100%, 50%);
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+} */
+
+.InformacionEstudiante {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 2em;
+  padding: 5px;
+  border: 1px solid hsl(0, 12%, 63%);
+  margin: 10px auto;
+  max-width: 50%;
+  border-radius: 10px;
+}
+
+.InformacionEstudiante p {
+  margin: 0;
+}
+
+.MensajeBienvenida {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 2.5em;
+  background-color: aquamarine;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  margin: 10px auto;
+  max-width: 50%;
+}
+.MensajeParaLogear {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 2.5em;
+  background-color: hsl(0, 37%, 33%);
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  margin: 10px auto;
+}
+
+.Lista {
+  font-family: Arial, Helvetica, sans-serif;
+  counter-reset: item;
+  margin: 10px auto;
+  padding-left: 0;
+  max-width: 50%;
+  text-align: center;
+}
+
+.Lista li {
+  display: block;
+  margin-bottom: 0.5em;
+  margin-left: 2em;
+}
+
+.Lista li::before {
+  display: inline-block;
+  content: counter(item) ") ";
+  counter-increment: item;
+  width: 2em;
+  margin-left: -2em;
+}
+
+.Lista li:hover {
+  color: hsl(32, 14%, 42%);
+  cursor: pointer;
+}
+
+.CategoriaLista {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 2.5em;
+  font-weight: bold;
+  color: hsl(208, 49%, 36%);
+  margin-bottom: 10px;
+  margin: 5px auto;
+  border: 3px solid;
+  border-radius: 5px;
+  max-width: 50%;
+  background-color: aquamarine;
+}
+
+.Counter-Container {
+  padding: 1em;
+  margin: 2em auto;
+  border-radius: 5px;
+  max-width: 25%;
+  background-color: hsl(173, 24%, 53%);
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+.Count-Display {
+  color: white;
+  font-size: 10em;
+  margin-top: 0;
+  margin-bottom: 25px;
+}
+.Counter-Button {
+  width: 200px;
+  height: 100px;
+  font-size: 1.5em;
+  font-weight: bold;
+  margin: 5px 5px;
+  background-color: hsl(172, 21%, 35%);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.Counter-Button:hover {
+  background-color: hsl(172, 21%, 25%);
+}
+
+.BotonesFuncionalesContenedor {
+  margin: 2em auto;
+  border-radius: 5px;
+  max-width: fit-content;
+  background-color: hsl(173, 24%, 53%);
+  font-family: Arial, sans-serif;
+}
+
+.BotonesFuncionales {
+  width: fit-content;
+  height: 100px;
+  font-size: 1.5em;
+  font-weight: bold;
+  margin: 5px 5px;
+  background-color: hsl(172, 21%, 35%);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.UseStateContainer {
+  color: white;
+  padding: 2em;
+  text-align: center;
+  margin: 2em auto;
+  border-radius: 5px;
+  max-width: fit-content;
+  background-color: hsl(173, 24%, 53%);
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+}
+.UseStateContainer button {
+  width: fit-content;
+  height: 80px;
+  font-size: 1em;
+  font-weight: bold;
+  margin: 5px 5px;
+  background-color: hsl(172, 21%, 35%);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.CompraContainer {
+  padding: 1em;
+  margin: 2em auto;
+  border-radius: 5px;
+  max-width: fit-content;
+  background-color: hsl(173, 24%, 53%);
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+}
+.SelectorColorContainer {
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.SelectorColorContainer h1 {
+  margin: 50px;
+  font-size: 3em;
+}
+.ColorDisplay {
+  width: 300px;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 5px solid hsl(0, 0%, 80%);
+  border-radius: 25px;
+  margin-bottom: 25px;
+  transition: 0.25 ease;
+}
+.ColorDisplay p {
+  color: hsl(0, 0%, 20%);
+  font-size: 2rem;
+  text-align: center;
+}
+.SelectorLabel {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+input[type="color"] {
+  width: 75px;
+  height: 50px;
+  padding: 5px;
+  border-radius: 10px;
+  border: 3px solid hsl(0, 0%, 80%);
+}
+.CarroContainer {
+  margin: 10px auto;
+  padding: 1em;
+  border-radius: 5px;
+  background-color: hsl(173, 24%, 53%);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.5rem;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: fit-content;
+  transition: 0.25 ease;
+}
+.CarroContainer input {
+  font-family: Arial, Helvetica, sans-serif;
+  height: 30px;
+  width: 150px;
+  border: 3px solid hsl(0, 0%, 80%);
+  border-radius: 5px;
+  text-align: center;
+}
+.ArrayComidaContainer {
+  background-color: hsl(173, 24%, 53%);
+  border-radius: 5px;
+  border: solid 2px hsl(0, 0%, 20%);
+  padding: 1em;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.5em;
+  max-width: fit-content;
+  margin: 10px auto;
+}
+.ObjetosCarroContainer {
+  max-height: fit-content;
+  display: flex;
+  flex-direction: column;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.5em;
+  background-color: hsl(173, 24%, 53%);
+  margin: 10px auto;
+  padding: 1em;
+  max-width: fit-content;
+  border-radius: 15px;
+}
+.ObjetosCarroContainer input {
+  margin: 5px auto;
+  font-family: Arial, Helvetica, sans-serif;
+  height: 40px;
+  width: 200px;
+  border: 3px solid hsl(0, 0%, 80%);
+  border-radius: 5px;
+  text-align: center;
+}
+.ObjetosCarroContainer li:hover {
+  color: hsl(0, 0%, 80%);
+  cursor: pointer;
+}
+.ToDoList {
+  padding: 2em;
+  border-radius: 15px;
+  background-color: hsl(0, 0%, 10%);
+  margin: 10px auto;
+  max-width: 90%;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  margin-top: 100px;
+}
+.ToDoList h1 {
+  font-size: 4rem;
+  color: white;
+}
+.ToDoList button {
+  font-size: 1.7rem;
+  font-weight: bold;
+  padding: 10px 20px;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.5s ease;
+}
+.BotonAgregar {
+  background-color: hsl(120, 76%, 36%);
+}
+.BotonAgregar:hover {
+  background-color: hsl(120, 76%, 26%);
+}
+.BotonBorrar {
+  background-color: hsl(0, 35%, 37%);
+}
+.BotonBorrar:hover {
+  background-color: hsl(0, 35%, 27%);
+}
+.BotonMover {
+  background-color: hsl(207, 58%, 47%);
+}
+.BotonMover:hover {
+  background-color: hsl(207, 58%, 37%);
+}
+.ToDoList input[type="text"] {
+  width: 35%;
+  font-size: 1.6rem;
+  padding: 10px;
+  border: 2px solid hsl(0, 0%, 80%, 0.5);
+  border-radius: 5px;
+  color: hsl(0, 0%, 0%, 0.5);
+}
+.ToDoList ol {
+  padding: 0;
+}
+.ToDoList li {
+  font-size: 2rem;
+  font-weight: bold;
+  padding: 15px;
+  background-color: hsl(0, 0%, 90%);
+  margin-bottom: 10px;
+  border: 3px solid hsl(0, 0%, 80%, 0.75);
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+}
+.TextoTarea {
+  flex: 1;
+}
+.BotonMover,
+.BotonBorrar,
+.BotonAgregar {
+  padding: 8px 12px;
+  font-size: 1.4rem;
+  margin-left: 10px;
+}
+.TamanoContainer {
+  margin: 10px auto;
+  background-color: hsl(240, 100%, 78%);
+  max-width: fit-content;
+  padding: 2em;
+  font-family: Arial, Helvetica, sans-serif;
+  border-radius: 10px;
+}
+.Clockcontainer {
+  background-image: url(assets/hillbillyfrog-600x396.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+  align-items: center;
+  backdrop-filter: blur(15px);
+}
+.Clock {
+  color: white;
+  font-size: 6rem;
+  font-weight: bold;
+  font-family: monospace;
+  text-align: center;
+  text-shadow: 3px 3px 5px hsl(0, 0%, 0%, 0.75);
+  backdrop-filter: blur(5px);
+  width: 100vw;
+  padding: 10px 0;
+}
+.Box {
+  font-family: Arial, Helvetica, sans-serif;
+  border: 3px solid;
+  padding: 25px;
+  margin: 10px auto;
+  text-align: center;
+}
